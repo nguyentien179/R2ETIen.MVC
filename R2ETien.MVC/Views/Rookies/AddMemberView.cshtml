@@ -1,0 +1,23 @@
+﻿@using R2ETien.MVC.Enum
+@model R2ETien.MVC.Entities.Person
+
+@{
+    ViewData["Title"] = "Add Member";
+}
+<h2>Add member</h2>
+
+<form method="post" asp-controller="Rookies" asp-action="AddMember">
+    <input type="text" name="FirstName" placeholder="First Name" required />
+    <input type="text" name="LastName" placeholder="Last Name" required />
+    <select asp-for="Gender" asp-items="Html.GetEnumSelectList<Gender>()" class="form-control"></select>
+    <input type="date" name="DateOfBirth" required />
+    <input type="text" name="PhoneNumber" placeholder="Phone Number" required />
+    <input type="text" name="BirthPlace" placeholder="BirthPlace" required />
+    </select>
+    <div class="form-group form-check">
+        <input asp-for="IsGraduated" class="form-check-input" type="checkbox" />
+        <label asp-for="IsGraduated" class="form-check-label">Graduated</label>
+    </div>
+    <button type="submit">Add Person</button>
+    <a asp-action="Members" class="btn btn-secondary">Back to List</a>
+</form>

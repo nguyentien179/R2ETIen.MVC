@@ -1,0 +1,62 @@
+﻿@using R2ETien.MVC.Enum
+@model List<R2ETien.MVC.Entities.Person> 
+
+@{
+    ViewData["Title"] = "Members List";
+}
+
+<h2>Members List</h2>
+
+<!-- Filter Options -->
+<form method="get">
+    <label for="filter">Filter by:</label>
+    <select name="filter" id="filter">
+        <option value="@Filter.All">All</option>
+        <option value=@Filter.Male>Males</option>
+        <option value=@Filter.Oldest>Oldest</option>
+        <option value=@Filter.Equals2000>Born in 2000</option>
+        <option value=@Filter.Greaterthan2000>Born after 2000</option>
+        <option value=@Filter.Lessthan2000>Born before 2000</option>
+    </select>
+    <button type="submit">Apply Filter</button>
+</form>
+
+<a href="@Url.Action("ExportToExcel", "Nashtech")" class="btn btn-success" style="margin-top: 10px;">
+    Export to Excel
+</a>
+
+<a href="/Nashtech/AddMember" class="btn btn-danger" style="margin-top: 10px;">
+ Add Member
+</a>
+
+
+<!-- Table -->
+<table border="1">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Gender</th>
+            <th>Date of Birth</th>
+            <th>Phone Number</th>
+            <th>Birth Place</th>
+            <th>Graduated</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var member in Model)
+        {
+            <tr>
+                <td>
+                    <a asp-action="MemberDetails" asp-route-id="@member.Id">
+                        @member.FirstName @member.LastName
+                    </a>
+                </td>
+                <td>@member.Gender</td>
+                <td>@member.DateOfBirth.ToString("yyyy-MM-dd")</td>
+                <td>@member.PhoneNumber</td>
+                <td>@member.BirthPlace</td>
+                <td>@(member.IsGraduated ? "Yes" : "No")</td>
+            </tr>
+        }
+    </tbody>
+</table>

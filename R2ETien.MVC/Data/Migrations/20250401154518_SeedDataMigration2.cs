@@ -1,0 +1,22 @@
+﻿using Microsoft.EntityFrameworkCore.Migrations;
+
+#nullable disable
+
+namespace R2ETien.MVC.Data.Migrations
+{
+    /// <inheritdoc />
+    public partial class SeedDataMigration2 : Migration
+    {
+        /// <inheritdoc />
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
+
+        }
+
+        /// <inheritdoc />
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+
+        }
+    }
+}
