@@ -17,8 +17,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\R2ETien.MVC.Tests\R2ETien.MVC.Tests.csproj" />
-  </ItemGroup>
-
 </Project>

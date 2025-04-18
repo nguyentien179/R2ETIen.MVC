@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using R2ETien.MVC.Data;
 using R2ETien.MVC.Interface;
+using R2ETien.MVC.Middleware;
 using R2ETien.MVC.Repositories;
 using R2ETien.MVC.Service;
 
