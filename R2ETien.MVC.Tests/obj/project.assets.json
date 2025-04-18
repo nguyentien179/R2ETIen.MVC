@@ -1071,11 +1071,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dotnet projects\\MVC\\R2E.MVC\\R2ETien.MVC.Tests\\R2ETien.MVC.Tests.csproj",
+      "projectUniqueName": "D:\\dotnet projects\\MVC\\R2ETien.MVC.Tests\\R2ETien.MVC.Tests.csproj",
       "projectName": "R2ETien.MVC.Tests",
-      "projectPath": "D:\\dotnet projects\\MVC\\R2E.MVC\\R2ETien.MVC.Tests\\R2ETien.MVC.Tests.csproj",
+      "projectPath": "D:\\dotnet projects\\MVC\\R2ETien.MVC.Tests\\R2ETien.MVC.Tests.csproj",
       "packagesPath": "C:\\Users\\chens\\.nuget\\packages\\",
-      "outputPath": "D:\\dotnet projects\\MVC\\R2E.MVC\\R2ETien.MVC.Tests\\obj\\",
+      "outputPath": "D:\\dotnet projects\\MVC\\R2ETien.MVC.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\chens\\AppData\\Roaming\\NuGet\\NuGet.Config"
